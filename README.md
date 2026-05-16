@@ -81,6 +81,31 @@ Securing persistence and understanding how the Blue Team will try to hunt you.
 
 ---
 
+
+## ☢️ Next-Gen Autonomous Capabilities (State-Actor Features)
+
+Operation Molasses is no longer just a knowledge base. It has been transformed into a fully autonomous, CI/CD-driven offensive platform featuring four groundbreaking capabilities:
+
+### 1. 🤖 Zencefil-AI (Autonomous Red Team Agent)
+Located in `Zencefil-AI/`, this is the brain of the operation. 
+- It uses the Markdown documentation within this repository as its **RAG (Retrieval-Augmented Generation) memory**.
+- **How it works:** You provide a target. The AI autonomously runs recon scripts, analyzes the open ports, matches them against its local vulnerabilities database, and executes the correct attack playbooks without human intervention.
+
+### 2. 🏭 The Malware Factory (Nightly CI/CD Pipeline)
+Anti-virus signatures update daily, so our payloads must evolve faster.
+- **How it works:** Every night at 03:00 AM, a GitHub Actions workflow wakes up. It takes a raw payload, runs it through the weaponizer (which encrypts it with a newly generated AES-256 key), and compiles a fresh, **FUD (Fully Undetectable)** executable artifact ready for the morning's operation.
+
+### 3. 🕸️ Shadow Network (IaC Cyber Polygon)
+Reading about Active Directory exploitation is meaningless without a Domain Controller to attack.
+- Located in `docs/03_Privilege_Escalation_and_Lateral_Movement/Lab_Environment/terraform/`.
+- **How it works:** Running Terraform provisions an entire vulnerable corporate network inside AWS in under 5 minutes. It includes a public-facing Linux DMZ (your initial foothold) and a private Windows Server 2019 Domain Controller to pivot to.
+
+### 4. 📱 Decentralized Telegram C2 Agent
+Traditional C2 frameworks (Cobalt Strike, Sliver) are easily flagged by NGFWs due to their direct beaconing.
+- Located in `docs/05_Defense_Evasion_and_Engineering/Advanced_C2/tools/zencefil_telegram_c2.py`.
+- **How it works:** The agent does not connect to an attacker's IP. Instead, it blends in with legitimate HTTPS traffic by communicating entirely through the **official Telegram API**. You control the compromised machine securely via a Telegram Chat on your phone.
+
+---
 ## 🚀 How to Deploy the Documentation Site
 
 The raw markdown files are powerful, but reading them through a terminal can be exhausting. We have built an automated, dark-mode-first documentation portal powered by **MkDocs Material**.
