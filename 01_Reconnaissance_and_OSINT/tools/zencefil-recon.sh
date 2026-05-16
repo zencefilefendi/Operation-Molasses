@@ -2,40 +2,92 @@
 # ==============================================================================
 # 🍯 Zencefil Efendi's Automated Reconnaissance Script (Operation Molasses)
 # ==============================================================================
-# Usage: ./zencefil-recon.sh <target-domain>
-# Note: Ensure nmap, whois, and subfinder are installed.
+# Description: Advanced reconnaissance pipeline for Operation Molasses.
+# Usage: ./zencefil-recon.sh -d <target-domain> [-o <output-dir>] [-s]
+# ==============================================================================
 
-TARGET=$1
+# Default values
+TARGET=""
+OUTDIR=""
+SILENT=0
+
+# Helper Functions
+print_info() { [ $SILENT -eq 0 ] && echo -e "\033[34m[*]\033[0m $1"; }
+print_success() { [ $SILENT -eq 0 ] && echo -e "\033[32m[+]\033[0m $1"; }
+print_error() { echo -e "\033[31m[!]\033[0m $1" >&2; }
+print_warning() { echo -e "\033[33m[-]\033[0m $1" >&2; }
+
+# Dependency Check
+check_deps() {
+    local deps=("whois" "subfinder" "nmap")
+    local missing=0
+    for dep in "${deps[@]}"; do
+        if ! command -v "$dep" &> /dev/null; then
+            print_error "Dependency missing: $dep"
+            missing=1
+        fi
+    done
+    if [ $missing -eq 1 ]; then
+        print_warning "Some tools are missing. Partial results will be generated."
+    fi
+}
+
+# Parse Arguments
+while getopts "d:o:sh" opt; do
+  case ${opt} in
+    d ) TARGET=$OPTARG ;;
+    o ) OUTDIR=$OPTARG ;;
+    s ) SILENT=1 ;;
+    h ) echo "Usage: ./zencefil-recon.sh -d <target-domain> [-o <output-dir>] [-s silent]"
+        exit 0 ;;
+    \? ) echo "Usage: ./zencefil-recon.sh -d <target-domain> [-o <output-dir>] [-s silent]"
+         exit 1 ;;
+  esac
+done
 
 if [ -z "$TARGET" ]; then
-    echo "[!] Error: No target specified."
-    echo "Usage: ./zencefil-recon.sh example.com"
+    print_error "No target specified."
+    echo "Usage: ./zencefil-recon.sh -d <target-domain>"
     exit 1
 fi
 
-echo "=================================================="
-echo "🕵️  Starting Operation Molasses Recon on: $TARGET"
-echo "=================================================="
+[ -z "$OUTDIR" ] && OUTDIR="recon_$TARGET"
 
-mkdir -p "recon_$TARGET"
+print_info "=================================================="
+print_info "🕵️  Starting Operation Molasses Recon on: $TARGET"
+print_info "=================================================="
 
-echo "[+] 1. Extracting WHOIS data..."
-whois $TARGET > "recon_$TARGET/whois.txt" 2>/dev/null
-echo "    -> Saved to recon_$TARGET/whois.txt"
+check_deps
+mkdir -p "$OUTDIR"
 
-echo "[+] 2. Enumerating Subdomains (Subfinder)..."
-if command -v subfinder &> /dev/null; then
-    subfinder -d $TARGET -o "recon_$TARGET/subdomains.txt" -silent
-    echo "    -> Saved to recon_$TARGET/subdomains.txt"
+# 1. WHOIS
+print_info "1. Extracting WHOIS data..."
+if command -v whois &> /dev/null; then
+    whois "$TARGET" > "$OUTDIR/whois.txt" 2>/dev/null
+    print_success "Saved to $OUTDIR/whois.txt"
 else
-    echo "    [!] Subfinder not installed. Skipping."
+    print_warning "Skipping WHOIS."
 fi
 
-echo "[+] 3. Running aggressive NMAP scan on target..."
-nmap -T4 -A -v $TARGET -oN "recon_$TARGET/nmap_scan.txt" > /dev/null 2>&1
-echo "    -> Saved to recon_$TARGET/nmap_scan.txt"
+# 2. Subdomains
+print_info "2. Enumerating Subdomains (Subfinder)..."
+if command -v subfinder &> /dev/null; then
+    subfinder -d "$TARGET" -o "$OUTDIR/subdomains.txt" -silent > /dev/null 2>&1
+    print_success "Saved to $OUTDIR/subdomains.txt"
+else
+    print_warning "Skipping Subfinder."
+fi
 
-echo "=================================================="
-echo "🍯 Recon completed. Zencefil Efendi is pleased."
-echo "Results saved in directory: recon_$TARGET/"
-echo "=================================================="
+# 3. NMAP
+print_info "3. Running aggressive NMAP scan on target..."
+if command -v nmap &> /dev/null; then
+    nmap -T4 -A "$TARGET" -oN "$OUTDIR/nmap_scan.txt" > /dev/null 2>&1
+    print_success "Saved to $OUTDIR/nmap_scan.txt"
+else
+    print_warning "Skipping NMAP."
+fi
+
+print_info "=================================================="
+print_info "🍯 Recon completed. Zencefil Efendi is pleased."
+print_info "Results saved in directory: $OUTDIR/"
+print_info "=================================================="
