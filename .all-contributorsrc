@@ -1,0 +1,90 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "KurozyOS",
+      "name": "Marko Živanović",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81830783?v=4",
+      "profile": "http://kurozy.xyz",
+      "contributions": [
+        "tool"
+      ]
+    },
+    {
+      "login": "m14r41",
+      "name": "Madhurendra kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95265573?v=4",
+      "profile": "https://m14r41.in",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "saim1011",
+      "name": "0xanon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116882904?v=4",
+      "profile": "https://github.com/saim1011",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "InfoBugs",
+      "name": "InfoBugs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96067790?v=4",
+      "profile": "https://github.com/InfoBugs",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rtnthakur",
+      "name": "Ratnesh kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100836712?v=4",
+      "profile": "https://rtnthakur.github.io/rats.com/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "0xBhushan",
+      "name": "Chandrabhushan Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95958300?v=4",
+      "profile": "https://github.com/0xBhushan",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "0xKayala",
+      "name": "Satya Prakash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16838353?v=4",
+      "profile": "https://0xkayala.medium.com",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "shps951023",
+      "name": "Wei Lin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12729184?v=4",
+      "profile": "https://github.com/shps951023",
+      "contributions": [
+        "translation"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "PentestingEverything",
+  "projectOwner": "m14r41"
+}

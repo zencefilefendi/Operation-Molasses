@@ -1,0 +1,8 @@
+venv/
+site/
+__pycache__/
+*.pyc
+.DS_Store
+docs/Phase1_Backup/
+Phase1_Backup/
+recon_*/

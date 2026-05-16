@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Alice Smith",
+    "email": "alice.s@target.com",
+    "title": "Senior DevOps Engineer",
+    "department": "Engineering"
+  },
+  {
+    "name": "Bob Jones",
+    "email": "bob.j@target.com",
+    "title": "Sales Representative",
+    "department": "Sales"
+  },
+  {
+    "name": "Charlie Brown",
+    "email": "charlie.b@target.com",
+    "title": "Director of Finance",
+    "department": "Accounting"
+  },
+  {
+    "name": "Diana Prince",
+    "email": "diana.p@target.com",
+    "title": "New Intern",
+    "department": "Marketing"
+  }
+]
