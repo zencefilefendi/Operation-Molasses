@@ -182,6 +182,7 @@ nav:
     - iOS Pentesting: 04_Specialized_Targets/Mobile_Pentesting/iOS Pentesting/README.md
 - 05 Defense Evasion & Engineering:
   - Stealth C2 Infrastructure: 05_Defense_Evasion_and_Engineering/Advanced_C2/README.md
+  - Telegram C2 Agent: 05_Defense_Evasion_and_Engineering/Advanced_C2/Telegram_C2_Playbook.md
   - P2P Botnet Architecture: 05_Defense_Evasion_and_Engineering/Advanced_C2/P2P_Botnet_Architecture.md
   - Payload Weaponization: 05_Defense_Evasion_and_Engineering/Weaponization.md
   - Zencefil Nim Loader: 05_Defense_Evasion_and_Engineering/tools/Zencefil_Loader/README.md
