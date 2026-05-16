@@ -1,0 +1,6 @@
+# Requirements for Zencefil-AI
+langchain==0.1.0
+openai==1.10.0
+chromadb==0.4.22
+tiktoken==0.5.2
+rich==13.7.0
